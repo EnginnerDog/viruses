@@ -1,5 +1,6 @@
 @echo off
-echo RegFucker v4.1
+title REGFUCKER
+echo RegFucker v5
 echo Are you really sure you want to do this? You can't go back.
 echo For payload 1 to work, run as admin.
 pause
