@@ -28,7 +28,6 @@ if "!block!" neq "" (
     set "block=!block:~1!"
     set "block=!block:~-%size%!"
 )
-goto memoryleak_loop
 
 :ChocoFace
 powershell -command "& {Add-Type -TypeDefinition $'
